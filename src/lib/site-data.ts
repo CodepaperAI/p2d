@@ -28,20 +28,16 @@ export const navItems = [
 
 export const images = {
   logo: "/brand/p2d-refinishing-logo.png",
-  hero:
-    "https://paint2decor.com/wp-content/uploads/2026/04/minimalist-kitchen-interior-design-scaled.jpg",
-  kitchen:
-    "https://paint2decor.com/wp-content/uploads/2026/04/kitchen-and-bathroom-cabinetry-refinishing-in-the-Greater-Toronto-Area-Color-Refinishing-Paint2Decor-2.jpg",
-  kitchenBefore:
-    "https://paint2decor.com/wp-content/uploads/2026/04/kitchen-and-bathroom-cabinetry-refinishing-in-the-Greater-Toronto-Area-Gallery-14-Paint2Decor-3.jpg",
-  kitchenAfter:
-    "https://paint2decor.com/wp-content/uploads/2026/04/kitchen-and-bathroom-cabinetry-refinishing-in-the-Greater-Toronto-Area-Color-Refinishing-Paint2Decor-2.jpg",
+  hero: "/projects/white-kitchen-after.jpeg",
+  kitchen: "/projects/brown-kitchen-finished-island.jpeg",
+  kitchenBefore: "/projects/brown-kitchen-before-wide.jpeg",
+  kitchenBeforeMain: "/projects/brown-kitchen-before-main.jpeg",
+  kitchenAfter: "/projects/white-kitchen-after.jpeg",
+  oakBefore: "/projects/oak-kitchen-before.jpeg",
   bathroom:
     "https://paint2decor.com/wp-content/uploads/2026/04/modern-bathroom-interior-with-white-vanity-topped-with-gray-countertop_262663-1013.jpg",
-  workshop:
-    "https://paint2decor.com/wp-content/uploads/2026/04/craftsman-kitchen-carpenter-kitchen-furniture-set-installation-service-work_73110-18871.jpg",
-  farmhouse:
-    "https://paint2decor.com/wp-content/uploads/2025/10/Farmhouse-Kitchen-Cabinets.jpg",
+  workshop: "/projects/brown-kitchen-before-main.jpeg",
+  farmhouse: "/projects/brown-kitchen-finished-island.jpeg",
 };
 
 export const stats = [
@@ -66,7 +62,7 @@ export const services = [
     eyebrow: "Signature service",
     description:
       "A smooth, modern spray finish for existing cabinet boxes, doors, and drawer fronts without the cost or disruption of a full replacement.",
-    image: images.hero,
+    image: images.kitchenAfter,
     icon: SprayCan,
     bullets: ["Factory-style lacquer finish", "Colour consultation", "On-site and booth finishing"],
   },
@@ -76,7 +72,7 @@ export const services = [
     eyebrow: "Hard surfaces handled",
     description:
       "Specialized primers and prep for surfaces many painters avoid, built to help the new finish bond cleanly and last.",
-    image: images.kitchenAfter,
+    image: images.kitchen,
     icon: ShieldCheck,
     bullets: ["Degreasing and sanding", "Bonding primer system", "Durable top coats"],
   },
@@ -132,30 +128,34 @@ export const processSteps = [
 
 export const gallery = [
   {
-    title: "Two-tone kitchen reset",
+    title: "Warm wood cabinet starting point",
     label: "Before",
     image: images.kitchenBefore,
-    alt: "Kitchen cabinet refinishing before image",
+    alt: "Brown kitchen cabinets before refinishing",
   },
   {
-    title: "Bright lacquer finish",
+    title: "Soft white refinished kitchen",
     label: "After",
     image: images.kitchenAfter,
-    alt: "Kitchen cabinet refinishing after image",
+    alt: "White kitchen cabinets after refinishing",
   },
   {
-    title: "Bathroom vanity refresh",
-    label: "Vanity",
-    image:
-      "https://paint2decor.com/wp-content/uploads/2026/04/kitchen-and-bathroom-cabinetry-refinishing-in-the-Greater-Toronto-Area-Gallery-6-Paint2Decor-2.jpg",
-    alt: "Bathroom vanity refinishing after image",
+    title: "Island and storage detail",
+    label: "Finished",
+    image: images.kitchen,
+    alt: "Finished kitchen island and cabinet storage after cabinet refinishing",
   },
   {
-    title: "Classic wood to modern profile",
+    title: "Original darker kitchen angle",
     label: "Before",
-    image:
-      "https://paint2decor.com/wp-content/uploads/2026/04/kitchen-and-bathroom-cabinetry-refinishing-in-the-Greater-Toronto-Area-Gallery-1-Paint2Decor-2.jpg",
-    alt: "Wood cabinet refinishing before image",
+    image: images.kitchenBeforeMain,
+    alt: "Wide kitchen view before refinishing darker wood cabinets",
+  },
+  {
+    title: "Compact oak kitchen before",
+    label: "Before",
+    image: images.oakBefore,
+    alt: "Compact oak kitchen cabinets before refinishing",
   },
 ];
 

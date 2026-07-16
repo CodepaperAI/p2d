@@ -8,7 +8,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <Image
           src={images.hero}
-          alt="Modern refinished kitchen cabinetry with dark blue cabinet doors and brass hardware"
+          alt="White kitchen cabinets after P2D Refinishing cabinet refinishing work"
           fill
           priority
           sizes="100vw"

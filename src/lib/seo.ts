@@ -81,6 +81,10 @@ export function absoluteUrl(path = "/") {
   return new URL(path, siteConfig.url).toString();
 }
 
+function absoluteImageUrl(path: string) {
+  return path.startsWith("http") ? path : absoluteUrl(path);
+}
+
 export function getSeoRoute(path: SeoPath) {
   return seoRoutes.find((route) => route.path === path) ?? seoRoutes[0];
 }
@@ -92,7 +96,7 @@ export function getRouteMetadata(path: SeoPath): Metadata {
     route.path === "/"
       ? { absolute: `${siteConfig.name} | ${route.title}` }
       : route.title;
-  const imageUrl = route.image.startsWith("http") ? route.image : absoluteUrl(route.image);
+  const imageUrl = absoluteImageUrl(route.image);
 
   return {
     title,
@@ -166,7 +170,7 @@ export function getLocalBusinessJsonLd() {
     legalName: siteConfig.legalName,
     url: siteConfig.url,
     logo: absoluteUrl(siteConfig.logo),
-    image: images.hero,
+    image: absoluteImageUrl(images.hero),
     description: siteConfig.description,
     telephone: contact.phone,
     email: contact.email,
@@ -259,7 +263,7 @@ export function getServicesJsonLd() {
         "@type": "Service",
         name: service.title,
         description: service.description,
-        image: service.image,
+        image: absoluteImageUrl(service.image),
         provider: {
           "@id": `${siteConfig.url}/#business`,
         },
